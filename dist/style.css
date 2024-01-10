@@ -128,15 +128,25 @@ body {
 
 /* CSS for screens smaller than 600px */
 /* @media (max-width: 600px) {
-  .card {
-    width: 45%;
-    flex-direction: column;
-  height: auto;
-  }
+
+#container {flex-direction: row;}
+.card {
+  width: 360px;
+  height: 800px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
 .logo-wrap {
   flex-grow: 2;
 }
-#container {flex-direction: row;}
+
+.grow2 { flex-grow: 2; }
+.shrink2 { flex-shrink: 2; }
 } */
 
 /* CSS for screens larger than 600px */
