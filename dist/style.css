@@ -3,9 +3,10 @@ body {
 }
 
 #container {
-    display: flex; 
-    flex-wrap: wrap;
-    width: 1920px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1920px;
 }
 
 .card {
@@ -13,12 +14,17 @@ body {
   height: 325px;
   border-radius: 32px;
   display: flex; 
+  /* flex-direction: column; */
   justify-content: center; 
   align-items: center; 
   text-align: center;
   margin: 50px 25px;
   background: white;
 }
+
+/* .logo-wrap, .company-text-wrap, .status {
+  width: 100%;
+}*/
 
 .logo-wrap {
   margin: 50px;
@@ -28,6 +34,17 @@ body {
 .logo {
   border-radius: 32px;
 }
+
+/* .logo {
+  width: 10vw; 
+  height: auto;
+  border-radius: 32px;
+} */
+
+/* .logo {
+  max-width: 100%;
+  height: auto;
+} */
 
 .company-text-wrap {
     height: 225px;
@@ -54,6 +71,24 @@ body {
   color: #2C1A12;
 }
 
+/* .company-name {
+  font-size: calc(1.25em + 1.25vw); 
+  font-family: 'Nunito Sans';
+  font-weight: bold;
+  text-align: left;
+  margin-right: 50px;
+  color: #2C1A12;
+}
+
+.company-details {
+  font-size: calc(1em + .75vw);
+  font-family: 'Nunito Sans';
+  font-weight: normal;
+  text-align: left;
+  margin-right: 50px;
+  color: #2C1A12;
+} */
+
 .status {
   height: 325px;
   width: 150px;
@@ -64,6 +99,7 @@ body {
   align-items: center; 
   text-align: center;
   margin-left: auto;
+  /* font-size: calc(1em + 1vw); */
 }
 
 .r-bg {
@@ -82,8 +118,33 @@ body {
   color: #ffffff;
   font-family: Helvetica;
   font-size: 31px;
+  /* font-size: calc(1em + 1vw); */
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px;
   transform: rotate(270deg);
 }
+
+/* CSS for screens smaller than 600px */
+/* @media (max-width: 600px) {
+  .card {
+    width: 100%;
+
+  }
+} */
+
+/* CSS for screens between 600px and 900px */
+/* @media (min-width: 600px) and (max-width: 900px) {
+  .card {
+    width: 50%;
+
+  }
+} */
+
+/* CSS for screens larger than 900px */
+/* @media (min-width: 900px) {
+  .card {
+    width: 33.33%;
+
+  }
+} */
