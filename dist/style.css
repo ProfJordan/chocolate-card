@@ -50,6 +50,7 @@ body {
     height: 225px;
   width: 255px;
     overflow: scroll;
+    /* flex-grow: 1; */
 }
 
 .company-name {
@@ -128,23 +129,49 @@ body {
 /* CSS for screens smaller than 600px */
 /* @media (max-width: 600px) {
   .card {
-    width: 100%;
-
+    width: 45%;
+    flex-direction: column;
+  height: auto;
   }
+.logo-wrap {
+  flex-grow: 2;
+}
+#container {flex-direction: row;}
+} */
+
+/* CSS for screens larger than 600px */
+/* @media (min-width: 600px) {
+  .card {
+    width: 100%;
+    flex-direction: row;
+  }
+  .company-text-wrap {flex-grow: 2;}
 } */
 
 /* CSS for screens between 600px and 900px */
 /* @media (min-width: 600px) and (max-width: 900px) {
   .card {
-    width: 50%;
-
+    width: 100%;
+    flex-direction: row;
+  }
+  .company-text-wrap {
+    flex-grow: 2;
+  }
+  #container {
+flex-direction: column;
   }
 } */
 
 /* CSS for screens larger than 900px */
 /* @media (min-width: 900px) {
   .card {
-    width: 33.33%;
-
+    width: 100%;
+    flex-direction: row;
+  }
+  .company-text-wrap {
+    flex-grow: 2;
+  }
+  #container {
+flex-direction: column;
   }
 } */
