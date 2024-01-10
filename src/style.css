@@ -1,0 +1,89 @@
+body {
+  background: rgba(51,51,51,.15);
+}
+
+#container {
+    display: flex; 
+    flex-wrap: wrap;
+    width: 1920px;
+}
+
+.card {
+  width: 775px;
+  height: 325px;
+  border-radius: 32px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  margin: 50px 25px;
+  background: white;
+}
+
+.logo-wrap {
+  margin: 50px;
+  border-radius: 32px;
+}
+
+.logo {
+  border-radius: 32px;
+}
+
+.company-text-wrap {
+    height: 225px;
+  width: 255px;
+    overflow: scroll;
+}
+
+.company-name {
+  font-size: 31px;
+  font-family: 'Nunito Sans';
+  font-weight: bold;
+  text-align: left;
+  margin-right: 50px;
+  color: #2C1A12;
+}
+
+.company-details {
+  padding-top: 20px;
+  font-size: 21px;
+  font-family: 'Nunito Sans';
+  font-weight: normal;
+  text-align: left;
+  margin-right: 50px;
+  color: #2C1A12;
+}
+
+.status {
+  height: 325px;
+  width: 150px;
+  float: right;
+  border-radius: 0 32px 32px 0;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  margin-left: auto;
+}
+
+.r-bg {
+ background: #3FA952;
+}
+
+.cn-bg {
+  background: #BD061B;
+}
+
+.m-bg {
+  background: #FB9233;
+}
+
+.status-text {
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 31px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transform: rotate(270deg);
+}
